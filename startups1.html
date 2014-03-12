@@ -1,0 +1,205 @@
+<!DOCTYPE HTML> 
+<html>
+	<head>
+		<title> Phase 1 Project</title>
+		<link type= "text/css" rel="stylesheet" href="css/bootstrap.css">
+		<link type= "text/css" rel="stylesheet" href="css/stylesheet.css">
+
+		<meta property="og:title" content="Facebook Open Graph META Tags"/>
+		<meta property="og:image" content="http://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png"/>
+		<meta property="og:site_name" content="David Walsh Blog"/>
+		<meta property="og:description" content="Facebook's Open Graph protocol allows for web developers to turn their websites into Facebook "graph" objects, allowing a certain level of customization over how information is carried over from a non-Facebook website to Facebook when a page is 'recommended', 'liked', or just generally shared."/>
+
+	</head>
+
+	<body>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+ 		 if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Let's Talk!</h4>
+      </div>
+      <div class="modal-body">
+        E-mail me at <a target="_blank" href="me@alexameyer.com"> me@alexameyer.com </a> <br>
+        Tweet me at <a target="_blank" href="http://twitter.com/alexandrakmeyer"> @alexandrakmeyer </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sounds Good!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<nav class= "navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				 	 <span class="sr-only">Toggle navigation</span>
+      				 <span class="icon-bar"></span>
+       				 <span class="icon-bar"></span>
+        			 <span class="icon-bar"></span>
+      			</button>
+
+			<a class="navbar-brand" href="#"><img class ="logo" src="img/sf.jpeg">City of San Francisco</a>
+			
+       
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul class="nav nav-pills pull-left">
+				<li><button type ="button" class ="btn btn-default navbar-btn"><a href="index.html">About</a></button><li>
+				<li><button type ="button" class ="btn btn-default navbar-btn"><a href="photos.html">Photos</a></button><li>
+				<li><button type ="button" class ="btn btn-default navbar-btn"><a href="startups.html">Startups</a></button><li>
+				<li><button type ="button" class ="btn btn-default navbar-btn"><a href="maps.html">Map</a></button><li>
+			</ul>
+
+		<ul class = "nav nav-pills pull-right">
+				<li><button type ="button" class ="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal"><a href="#">Get in Touch</a></button></li>
+			</ul>
+		</div>
+		</nav>
+
+
+	<section class="main-body">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+  				<div class="panel-heading">
+    			<h3 class="panel-title">Everlane</h3>
+  				</div>
+  				<div class="panel-body">
+  					<div class="row">
+  					<div class="col-md-6">
+    					<img class ="responsive" src="http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0013/8672/138672v8-max-250x250.jpg"></img>
+    				<div class="col-md-6">
+    					<ul>
+    						<li>Funding: 1M+</li>
+    						<li>Employees: 30+</li>
+    						<li>Industry: Fashion/E-commerce</li>
+    					</ul>
+    				</div>
+    				</div>
+    				</div>
+    			</div>
+    			</div>
+    		</div>
+
+    		<div class="col-md-6">
+				<div class="panel panel-default">
+  				<div class="panel-heading">
+    			<h3 class="panel-title">Square</h3>
+  				</div>
+  				<div class="panel-body">
+  					<div class="row">
+  					<div class="col-md-6">
+    					<img class ="responsive" src="http://www.theiospost.com/storage/Square_Logo_Portrait.png?__SQUARESPACE_CACHEVERSION=1315308345510"></img>
+    				<div class="col-md-6">
+    					<ul>
+    						<li>Funding: 100M+</li>
+    						<li>Employees: 100+</li>
+    						<li>Industry: Payments</li>
+    					</ul>
+    				</div>
+    			</div>
+    			</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+
+<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+  				<div class="panel-heading">
+    			<h3 class="panel-title">Instacart</h3>
+  				</div>
+  				<div class="panel-body">
+  					<div class="row">
+  					<div class="col-md-6">
+    					<img class ="responsive" src="http://visionwiz.net/wp-content/uploads/2013/08/personal-groceries-shopping.png"></img>
+    				</div>
+    				<div class="col-md-6">
+    					<ul>
+    						<li>Funding: 8M+</li>
+    						<li>Employees: 30+</li>
+    						<li>Industry: Grocery delivery</li>
+    					</ul>
+    				</div>
+    			</div>
+    			</div>
+    		</div>
+
+
+	<script>
+		window.addEventListener('load', function() {
+			startup = Class.extend({
+				init: function() {},
+				funding: 0,
+				name:'',
+				industry: '',
+				logo: '',
+				render: function () {
+					var markup = '';
+					markup += '<div class="container">';
+					markup += '<div class = "row"> <div class="col-md-6"><div class = "panel panel-default">';
+					if (this.name) {
+						markup += '<div class="panel-heading"> <h3 class="panel-title">' + this.name + '</h3></div>';
+					}
+					markup += '<br>';
+					if (this.logo) {
+						markup += '<img src = "' + this.logo + '"> '; 
+					}
+					markup += 'funding: ' + this.funding;
+					console.log(this.funding);
+					markup += '<br>';
+					markup += 'industry: ' + this.industry; 
+					console.log(this.industry);
+					markup += '<br>';
+					markup += '</div>';
+					markup += '</div>';
+					markup += '</div>';
+					markup += '</div>';
+					document.body.innerHTML += markup;
+
+			},
+		});
+
+		}); 
+
+		</script> 
+	
+	</section>
+
+<footer id="footer">
+	<div>
+		<p>2014 Alexa Meyer</p>
+		<div class="fb-like" data-href="http://www.brainstation.it" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+		<a href="https://twitter.com/share" 
+		class="twitter-share-button" 
+		data-lang="en"
+		data-url="http://brainstation.it"
+		data-text="checkout brainstation"
+		data-via="Brainstation">Tweet </a>
+		
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	
+	</div>
+</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/startups.js"></script>
+	<script src="js/bootstrap.js"></script>
+	</body>
+	</html>
